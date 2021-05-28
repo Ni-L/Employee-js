@@ -65,3 +65,29 @@ function getEmpHours()
         return emp_hours;
 }
 }
+{
+//UC6
+function CalcDailyWage(emp_hours)
+{
+    return emp_hours*WAGE_PER_HOUR;
+
+}
+const MAX_HRS_IN_MONTH=160;
+const NUM_OF_WORKING_DAYS =20;
+let totalEmpHrs=0;
+let totalWorkingDays =0;
+let empDailyWageArr=new Array();
+
+while(totalEmpHours<=MAX_HRS_IN_MONTH 
+    && totalWorkingDays<NUM_OF_WORKING_DAYS)
+    {
+        totalWorkingDays++;
+        let empCheck =Math.floor(Math.random()*10)%3;
+        let emp_hours=getEmpHours(empCheck);
+        totalEmpHours+=emp_hours;
+        empDailyWageArr.push(CalcDailyWage(emp_hours));
+    }
+    let employeeWage=CalcDailyWage(totalEmpHours);
+    console.log("UC6-TotalDays:"  +totalWorkingDays + "TOTAL Hrs: " +totalEmpHrs + "Emp Wage" +employeeWage)
+
+}
