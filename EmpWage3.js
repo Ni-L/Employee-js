@@ -161,3 +161,7 @@ empDailyWageMap.forEach((value,key)=>{
 console.log("9B Full Working Days: "+ fullWorkingDaysArray);
 console.log("9B Part time working days: "+partTimeWorkingDaysArray);
 console.log("9B Non Working Days: "+noWorkingDayArray);
+
+//UC10 Printing Object Array
+console.log("Printing Array of Objects wherer to String is used to print the objects array");
+console.log("Printing Array"+empDailyHrsAndWageArray);
